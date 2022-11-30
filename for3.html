@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For3</title>
+</head>
+
+<body>
+    <h1>Somas Parciais</h1>
+
+    <p>3 (Soma do Número 1 com o Número 2)</p>
+    <p id="resultado"></p>
+
+    <script>
+        let soma = 3;
+        let numero = "";
+
+        for (let index = 3; index <= 10; index++) {
+
+            soma += index; 
+
+            numero += soma + " (Soma Parcial com o Número " + index + ") </br>";
+
+            document.getElementById("resultado").innerHTML = numero;
+
+        }
+    </script>
+
+</body>
+
+</html>
